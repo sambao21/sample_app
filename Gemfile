@@ -6,12 +6,22 @@ gem 'rails', '4.0.5'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
-  gem 'rspec-rails', '2.13.1'
+
+  # sambao21: advanced
+  # gem 'rspec-rails', '2.13.1' #original, updated to 2.14.1
+  gem 'rspec-rails', '~> 2.14.1'
+  gem 'guard-rspec', '~> 4.2.8'
+
+  # sambao21: advanced
+  # Adds rspec command for spring. Includes a dependency for the spring Rails application preloader.
+  gem 'spring-commands-rspec'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
+  # sambao21: advanced
+  gem 'terminal-notifier-guard'
 end
 
 gem 'sass-rails', '4.0.1'
