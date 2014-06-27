@@ -5,6 +5,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.5'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
+gem 'bcrypt-ruby', '3.1.2'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
@@ -12,11 +13,16 @@ group :development, :test do
   # sambao21: advanced
   # gem 'rspec-rails', '2.13.1' #original, updated to 2.14.1
   gem 'rspec-rails', '~> 2.14.1'
+
+  # sambao21: advanced
   gem 'guard-rspec', '~> 4.2.8'
 
   # sambao21: advanced
   # Adds rspec command for spring. Includes a dependency for the spring Rails application preloader.
   gem 'spring-commands-rspec'
+
+  #sambao21: advanced
+  gem 'awesome_print'
 end
 
 group :test do
